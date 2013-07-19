@@ -1,0 +1,125 @@
+/*
+Theme Name: 	SolrPress
+Version: 		1.0
+Description: 	A child theme for classipress that uses Apache SOLR search
+Author: 		Mark
+Author URL: 	http://mark.lomongo.net
+Template: 		classipress
+*/
+@import url("../classipress/style.css");
+
+.pagingblock{
+	width:100%;
+}
+.search_paging{
+	width:auto;
+	float:left;
+	padding-top:3px;
+}
+.search_param{
+}
+div.pagination {
+	line-height:2.4em;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	margin-left: 6px;
+}
+
+div.pagination a {
+	color: #333;
+	border: 1px solid #CCC;
+	padding: 5px 12px;
+	margin: 2px;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float:left;
+}
+div.pagination a:hover, div.pagination a:active {
+	background: #EDEDE4;
+}
+div.pagination span.current {
+	border: 1px solid rgb(117, 117, 117);
+	padding: 5px 12px;
+	margin: 2px 5px;
+	background-color: rgb(117, 117, 117);	
+	font-weight: bold;
+	color: #EDEDE4;
+	overflow: hidden;
+	text-align: center;
+	text-decoration: none;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float:left; 	
+}
+div.pagination span.disabled {
+	padding: 5px 12px;
+	margin: 2px 5px;
+	border: 1px solid #EEE;
+	color: #DDD;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	border-radius: 6px;
+	float:left;
+}
+
+.search_param  select#items_per_page{
+	border: 1px solid #BBB;
+	min-height: 15px;
+	min-width: 250px;
+	padding: 7px;
+	font-size: 17px;
+	color: #666666;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	line-height: 34px;
+	float:left;
+}
+.search_param select#items_sort{
+	border: 1px solid #BBB;
+	min-height: 15px;
+	min-width: 250px;
+	padding: 7px;
+	font-size: 17px;
+	color: #666666;
+	-khtml-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	line-height: 34px;
+	float:right;
+}
+
+
+
+@media screen and (max-width: 800px) {
+	.search_param  select#items_per_page {
+		max-width:250px;
+	}
+	.search_param  select#items_sort {
+		max-width:250px;
+	}
+}
+@media screen and (max-width: 600px) {
+	.search_param{
+		width: 100%;
+		padding-bottom: 10px;
+	}
+	.search_param  select#items_per_page{
+		min-width: 50%;
+		max-width: 100%;
+		float: left;
+	}
+	.search_param  select#items_sort{
+		min-width: 50%;
+		max-width: 100%;
+		float: left;
+	}
+}
